@@ -1,0 +1,10 @@
+# One-factor sensitivity sweep (Appendix C, Table C). Each point is one run on
+# the tuning split, varying one setting around the baseline hyperparameters.
+# The centre point of every axis is the tuning-split A0 run; the
+# contrastive-weight value 0 is the tuning-split L1 run.
+temperature: [0.05, 0.25]
+defects_per_batch: [16, 32]
+batch_size: [64, 192]            # defect fraction of the batch held at 64/128
+lr: [0.0001, 0.001]
+focal_gamma: [1.0, 5.0]
+contrastive_weight: [0.04, 0.36, 1.2]

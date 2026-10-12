@@ -1,0 +1,9 @@
+# Hyperparameters selected without VF (Table B, "Baseline").
+# Used for the main comparison, the ablation, the sensitivity centre and the
+# VF runs under baseline hyperparameters (Table 9).
+# Source: study defectcon_baseline (journal final_novf), trial 2, smoothed val AP 0.6942.
+lr: 0.00045847384803041535
+focal_gamma: 3.8989914349436563
+contrastive_weight: 0.11889145134874515
+temperature: 0.14077823962083344
+defects_per_batch: 64

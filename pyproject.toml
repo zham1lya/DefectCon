@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defectcon"
+version = "1.0.0"
+description = "DefectCon: supervised contrastive learning for tiny-defect detection in weld radiographs"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "Pillow",
+    "PyYAML",
+    "optuna",
+    "iterative-stratification",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+umap = ["umap-learn"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["defectcon"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

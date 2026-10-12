@@ -1,0 +1,15 @@
+method,metric,mean,sd
+defectcon,ap,0.613702,0.010429
+defectcon,pauc5,0.812662,0.007621
+defectcon,pauc10,0.849137,0.007153
+defectcon,auroc,0.932887,0.003946
+defectcon,recall,0.744,0.026331
+defectcon,precision,0.323954,0.015431
+defectcon,f1,0.451021,0.015125
+bgad,ap,0.576901,0.00601
+bgad,pauc5,0.778542,0.00386
+bgad,pauc10,0.825105,0.003931
+bgad,auroc,0.935021,0.002379
+bgad,recall,0.704,0.010517
+bgad,precision,0.309872,0.006779
+bgad,f1,0.43029,0.007441

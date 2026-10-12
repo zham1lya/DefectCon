@@ -1,0 +1,7 @@
+row,image_id,class
+Correctly detected defect,img_024028,defect
+Correctly detected defect,img_036678,defect
+Missed defect (FN),img_033499,defect
+Missed defect (FN),img_032719,defect
+Correct normal (TN),img_037915,normal
+Correct normal (TN),img_000480,normal

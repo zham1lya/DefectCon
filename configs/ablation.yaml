@@ -1,0 +1,8 @@
+# Ablation cells (Section 5.4, Tables 7-8). Each cell changes exactly one
+# setting of the complete configuration A0. A0 on the CV partitions is the
+# seed-42 run of the main comparison.
+A0: {}
+D1: {dilate: none}              # no dilation in layer3/layer4 (10x10 final map)
+P1: {pooling: avg}              # average instead of max pooling
+J1: {proj_type: mlp}            # MLP projector on the pooled vector
+L1: {contrastive_weight: 0.0}   # contrastive loss removed

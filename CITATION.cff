@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its result artifacts, please cite the paper."
+license: MIT
+title: "Choosing Defect Detectors by False-Alarm Budget: A Controlled Study of Supervised Contrastive Learning for Radiographic Weld Inspection"
+repository-code: "https://github.com/zham1lya/DefectCon"
+abstract: >-
+  Code and result artifacts for DefectCon, a supervised-contrastive detector for
+  tiny defects in industrial radiographic images. The reported numbers can be
+  recomputed from the released per-image scores with tests/test_paper_numbers.py.
+authors:
+  - family-names: Saparova
+    given-names: Zhamilya
+    affiliation: "Department of Industrial Engineering, University of Ulsan"
+  - family-names: Lee
+    given-names: Sudong
+    affiliation: "Department of Industrial Engineering, University of Ulsan"
+keywords:
+  - defect detection
+  - supervised contrastive learning
+  - radiographic inspection
+  - weld inspection
+  - anomaly detection
+  - reproducibility

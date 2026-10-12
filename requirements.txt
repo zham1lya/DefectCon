@@ -1,0 +1,13 @@
+# Python 3.9; CUDA 11.8 builds of torch/torchvision were used for all experiments.
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.26.4
+Pillow==10.0.0
+PyYAML==6.0.3
+scikit-learn==1.6.1
+scipy==1.13.1
+matplotlib==3.9.4
+iterative-stratification==0.1.9
+optuna==4.9.0
+umap-learn==0.5.12
+pytest

@@ -1,0 +1,4 @@
+condition,method,metric,mean,sd,n_runs,fpr_budget,threshold
+vf_tuned,defectcon,recall,0.7300,0.0114,10,0.05,validation_quantile
+vf_tuned,defectcon,precision,0.3099,0.0173,10,0.05,validation_quantile
+vf_tuned,defectcon,f1,0.4349,0.0177,10,0.05,validation_quantile

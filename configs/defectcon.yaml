@@ -1,0 +1,30 @@
+# DefectCon: architecture and fixed training protocol (Section 4, Appendix B).
+# Identical for every run; a run varies only the hyperparameters in hparams/,
+# one ablation override (ablation.yaml) or one sensitivity point (sensitivity.yaml).
+
+image_size: 320              # bilinear resize of the 1256x1256 radiographs
+normalize: {mean: 0.5, std: 0.5}
+
+architecture:
+  dilate: layer34            # dilated layer3 (d=2) and layer4 (d=4): 40x40 final map
+  pooling: max
+  proj_type: conv            # 1x1-conv projector applied before pooling
+  proj_dim: 128
+  hidden_dim: 256            # classifier hidden width
+
+batch_size: 128
+classification_weight: 1.0
+weight_decay: 1.0e-4
+grad_clip_norm: 1.0
+amp: true
+
+# Training length is fixed in optimizer steps. One block = 495 steps.
+step_block: 495
+budget_blocks: {novf: 44, vf: 50}     # 21,780 and 24,750 steps
+warmup_blocks: 10                     # ~4,950 steps of linear warm-up
+real_defect_fraction_vf: 0.3          # VF batches: 19 real + 45 synthetic of 64 defect slots
+
+smoothing_window: 5          # trailing window of the smoothed validation AP
+num_workers: 8
+val_batch_size: 128
+score_batch_size: 64

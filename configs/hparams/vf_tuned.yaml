@@ -1,0 +1,7 @@
+# Hyperparameters selected with VF (Table B, "VF"; Table 10).
+# Source: study defectcon_vf (journal final_vf), trial 9, smoothed val AP 0.6186.
+lr: 0.00010705649804687251
+focal_gamma: 1.0239887318232685
+contrastive_weight: 2.704729722717776
+temperature: 0.2364580683823575
+defects_per_batch: 64

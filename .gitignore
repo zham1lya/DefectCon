@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Checkpoints and training output
+*.pth
+*.pt
+*.ckpt
+runs/
+
+# Images and data (not redistributable)
+data/
+dataset*/
+splits/
+*.tif
+*.tiff
+*.bmp
+*.jpg
+*.jpeg
+results/**/*.png
+
+# Logs
+logs/
+*.log
+*.out
+
+# Local configuration
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# Private mapping between released IDs and original image names; private build scripts
+private/
+*id_map*.csv

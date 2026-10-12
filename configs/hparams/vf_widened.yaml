@@ -1,0 +1,7 @@
+# Hyperparameters from the widened VF search (Appendix B, Section 5.5).
+# Source: study defectcon_vf_widened (journal final_vf3), trial 1, smoothed val AP 0.6219.
+lr: 8.112882843900977e-05
+focal_gamma: 0.5853072492891597
+contrastive_weight: 0.6552531397327067
+temperature: 0.49414337679197506
+defects_per_batch: 64
